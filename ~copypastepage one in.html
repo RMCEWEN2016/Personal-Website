@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>
+			Projects
+		</title>
+		
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+		<style>
+		
+	/** Start Default Declarations **/
+	
+/** Color Swatch **/
+/**
+Red Banner: #E33232
+
+Lightest Grey: #242424 RGB: 36,36,36
+-#232323 RGB: 35,35,35
+-#222222 RGB: 34,34,34
+-#212121 RGB: 33,33,33
+-#202020 RGB: 32,32,32
+-#1F1F1F RGB: 31,31,31
+Darkest Grey: #1E1E1E RGB: 30,30,30
+**/
+			
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			@font-face { 
+			font-family: kabelblack; 
+			src: url('../fonts/kabelblack.ttf'); 
+			}								/** class="kabelblack-font" **/ 
+			
+			@font-face { 
+			font-family: futura; 
+			src: url('../fonts/futura.ttf');
+			}								/** class="futura-font" **/
+			
+			@font-face { 
+			font-family: texgyre; 
+			src: url('../fonts/texgyre.otf');
+			}								/** class="texgyre-font" **/
+			
+			@font-face { 
+			font-family: bebas; 
+			src: url('../fonts/bebas.otf');
+			}								/** class="bebas-font" **/
+			
+	/** End Default Declarations **/		
+
+	/** Start Navigation Bar **/
+	
+			.div1 {
+				width: 100%;
+				height: 50px;
+				background-color: #E33232;
+				min-width: 1300px;
+			}
+			
+			.fieldset1 {
+				margin: auto;
+				width: 1136px;
+				height: 50px;
+				background-color: #E33232;
+				border: none;
+			}
+			
+			.logo {
+					float: left;
+					height: 35px;
+					margin-top: 6px;
+					margin-left: -2px;
+			}	
+				
+			.nav-a {
+					text-decoration: none;
+					color: white;
+					line-height: 50px;
+					display: block;
+					padding: 0px 12px 0px 12px;
+					background-color: #E33232;
+					font-family: texgyre;
+			}
+			
+			.nav-a:hover {
+					color: lightgrey;
+					background-color: #D42F2F;
+			}
+			
+			.nav-li {
+					float: left;
+			}
+				
+			.nav-ul {
+					list-style-type: none;
+					float: right;
+			}
+			
+	/** End Navigation Bar **/	
+
+	/** Start Bio **/
+			
+			.div2 {
+				width: 100%;
+				height: 140px;
+					background-color: #242424;
+				min-width: 1300px;
+			}
+			
+			#wrapper {
+				height: 140px;
+				width: 100%;
+				overflow: hidden;
+				position: absolute;
+				z-index: 3;
+			}
+			
+			.div2-header {
+				position: relative;
+				top: -900px;
+				min-width: 1800px;
+				z-index: 3;
+			}
+			
+			.fieldset2 {
+				margin: auto;
+				width: 1136px;
+				height: 140px;
+				background-color: none;
+				border: none;
+				z-index: 5;
+			}
+			
+			.fieldset2-h1 {
+				color: white;
+				align-items: center;
+				justify-content: center;
+				display:flex;
+				font-size: 130px;
+				font-family: bebas;
+				z-index: 5;
+				position: relative;
+			}
+			
+	/** End Bio **/
+	
+	/** Start div/fieldset5 **/
+			
+			.div5 {
+				width: 100%;
+				height: 260px;
+				background-color: #242424;
+				min-width: 1300px;
+			}
+			
+			.fieldset5 {
+				margin: auto;
+				width: 1136px;
+				height: 260px;
+				background-color: none;
+				border: none;
+			}
+			
+			.fieldset5-h1 {
+				margin-top: 30px;
+				font-family: futura;
+				color: white;
+			}
+			
+			.fieldset5-p {
+				font-size: 12pt;
+				color: white;
+				font-family: texgyre;
+			}
+			
+	/** End div/fieldset5 **/
+
+	/** Start div/fieldset3 **/
+			
+			.div3 {
+				width: 100%;
+				height: 553px;
+					background-color: #1E1E1E;
+				min-width: 1300px;
+			}
+			
+			.fieldset3 {
+				margin: auto;
+				width: 1136px;
+				height: 553px;
+				background-color: none;
+				border: none;
+			}
+			
+			.fieldset3-sides1 {
+				height: 198px;
+				width: 352px;
+				margin-top: 57px;
+				background-color: black;
+				float: left;
+			}
+			
+			.fieldset3-middle1 {
+				height: 198px;
+				width: 352px;
+				margin-top: 57px;
+				margin-left: 40px;
+				margin-right: 40px;
+				background-color: black;
+				float: left;
+			}
+			
+			.fieldset3-sides2 {
+				height: 198px;
+				width: 352px;
+				margin-top: 40px;
+				background-color: black;
+				float: left;
+			}
+			
+			.fieldset3-middle2 {
+				height: 198px;
+				width: 352px;
+				margin-top: 40px;
+				margin-left: 40px;
+				margin-right: 40px;
+				background-color: black;
+				float: left;
+			}
+			
+			.project-itempicture {
+				height: 198px;
+				position: absolute;
+				transform: rotate(180deg);
+				opacity: .75;
+			}
+			
+			.project-itempicture:hover {
+				-webkit-transition-delay: .018s;
+				-webkit-transition-duration: .5s; /* Safari */
+				transition-duration: .5s;
+				opacity: 1;
+			}
+			
+				.project-itempicture2 {
+					height: 198px;
+					position: absolute;
+					transform: rotate(180deg);
+					opacity: .5;
+					-webkit-filter: grayscale(100%);
+						-webkit-transition: all .45s ease-out;
+						-moz-transition: all .45s ease-out;
+						-o-transition: all .45s ease-out;
+						-ms-transition: all .45s ease-out;
+						transition: all .45s ease-out;
+				}
+			
+				.project-itempicture2:hover {
+					-webkit-transition-delay: .018s;
+					-webkit-transition-duration: .8s; /* Safari */
+					transition-duration: .8s;
+					opacity: 1;
+					-webkit-filter: grayscale(25%);
+						-webkit-transition: all .6s linear;
+						-moz-transition: all .6s linear;
+						-o-transition: all .6s linear;
+						-ms-transition: all .6s linear;
+						transition: all .6s linear;
+				}
+			
+			.project-placeholder {
+				position: absolute;
+			}
+			
+			.project-title {
+				color: white;
+				font-family: futura;
+				margin-left: 5px;
+				margin-top: -2px;
+				position: absolute;
+			}
+			
+	/** End div/fieldset3 **/
+	
+	/** Start Contact Me **/
+			
+			.div4 {
+				width: 100%;
+				height: 275px;
+				background-color: #E33232;
+				min-width: 1300px;
+			}
+			
+			.fieldset4 {
+				margin: auto;
+				width: 1136px;
+				height: 275px;
+				background-color: #E33232;
+				border: none;
+			}
+			
+			.contact-table {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.td1 {
+				float: left;
+				padding: 30px 0px 0px 0px;
+				color: white;
+			}
+			
+				.contact-page-link {
+					color: lightgrey;
+					text-decoration: none;
+				}
+				
+				.contact-page-link:hover {
+					color: lightgrey;
+					text-decoration: underline;
+				}
+			
+			.td2 {
+				float: right;
+				padding: 30px 0px 0px 0px;
+				color: white;
+			}
+			
+			.contactme-facebook {
+				margin-bottom: 5px;
+			}
+			
+			.td3 {
+				float: left;
+				color: white;
+			}
+			
+			.td4 {
+				float: right;
+				color: white;
+			}
+			
+			.td5 {
+				text-align: center;
+				color: white;
+				font-size: 10pt;
+				padding-bottom: 20px;
+			}
+			
+	/** End Contact Me **/
+	
+	/** Start Miscellaneous **/
+	
+		.futura-font {
+			font-family: futura;
+		}
+		
+		.texgyre-font {
+			font-family: texgyre;
+		}
+		
+		.bebas-font {
+			font-family: bebas;
+		}
+	
+	/** End Miscellaneous **/
+			
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<fieldset class="fieldset1">
+			
+				<img class="logo" src="../img/logo.png" />
+				
+					<nav id="nav-nav">
+						<ul class="nav-ul">
+							<li class="nav-li"><a class="nav-a" href="../index.html">Home</a></li>
+							<li class="nav-li"><a class="nav-a" href="../resume.html">Resume</a></li>
+							<li class="nav-li"><a class="nav-a" href="../work.html">Work</a></li>
+							<li class="nav-li"><a class="nav-a" href="../projects.html">Projects</a></li>
+							<li class="nav-li"><a class="nav-a" href="../references.html">References</a></li>
+							<li class="nav-li"><a class="nav-a" href="../contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					
+			</fieldset>
+		</div>
+		
+		<div class="div2">
+		
+			<div id="wrapper">		
+					
+				<img src="../img/projects/headerpicture.jpg" width="100%" class="div2-header" />
+						
+			</div>
+			
+			<fieldset class="fieldset2">
+					<h1 class="fieldset2-h1">PROJECTS</h1>
+			</fieldset>
+			
+		</div>
+		
+<!-- START PROJECTS DESCRIPTION -->
+
+		<div class="div5">
+			<fieldset class="fieldset5">
+				
+				<h1 class="fieldset5-h1">PNY Flashdrive</h1>
+				<p class="fieldset5-p">
+				As a student that is taking a lot of computer courses and also works on the computer a lot at home, a flashdrive is my best friend. Being able to take a flashdrive and slap it onto my keys is a godsend if you like physical file transfer and not having to mess with clouds. I use Google Drive for primarily essays and slideshows, but never really any other files because they aren't already in a format that I can develop within Google Drive itself. Google Drive has Slides for slideshows and Docs for writing papers, but they don't have CAD programs or a built in coding program. It's a lot easier to me to save files in a format that I'm used to than messing around in Google Drive and their foreign file heirarchy design.
+				<br />
+				I carry around a USB 3.0 PNY Flashdrive with me wherever I go, but I eventually came across a problem. I almost lost it because it came off of my keys because of an engineering mistake. Instead of figuring out a way to somehow lock the 2 injection-molded peices together, they left them as is. This then weakens over use, and eventually people who use this product on a daily basis WILL lose it along with all their important documents within it. I've come up with a fix for it.
+				</p>
+				
+			</fieldset>
+		</div>
+
+<!-- END PROJECTS DESCRIPTION -->
+		
+<!-- START TABLE OF PROJECTS -->
+		
+	<!--  -->
+		<div class="div3">
+			<fieldset class="fieldset3">
+					
+				<div class="fieldset3-sides1">
+					<img src="../img/projects/displayimg.jpg" class="project-itempicture" />
+					<img src="../img/textbackground.png" class="project-placeholder" />
+					<h1 class="project-title">PNY Flashdrive</h1>
+				</div>
+
+	<!-- PNY Flashdrive -->
+				<div class="fieldset3-middle1">
+					<a href="#">
+						<img src="../img/projects/displayimgb&w.jpg" class="project-itempicture" />
+					</a>
+					<img src="../img/textbackground.png" class="project-placeholder" />
+					<h1 class="project-title">PNY Flashdrive</h1>
+				</div>
+				
+	<!--  -->
+				<div class="fieldset3-sides1">
+					<a href="#">
+						<img src="../img/projects/displayimg.jpg" class="project-itempicture2" />
+					</a>
+					<img src="../img/textbackground.png" class="project-placeholder" />
+					<h1 class="project-title">PNY Flashdrive</h1>
+				</div>
+				
+	<!--  -->
+				<div class="fieldset3-sides2">
+					<img src="../img/textbackground.png" class="project-placeholder" />
+					<h1 class="project-title">PNY Flashdrive</h1>
+				</div>
+				
+	<!--  -->
+				<div class="fieldset3-middle2">
+					<img src="../img/textbackground.png" class="project-placeholder" />
+					<h1 class="project-title">PNY Flashdrive</h1>
+				</div>
+				
+			</fieldset>
+		</div>
+		
+<!-- END TABLE OF PROJECTS -->
+			
+		<div class="div4">
+			<fieldset class="fieldset4">
+			
+				<table class="contact-table">
+					<tr>
+						<td class="td1"><h1 class="futura-font">Contact Me</h1><br /><p class="texgyre-font">Rather fill out an on-site email form? Visit the <a class="contact-page-link" href="#">Contact</a> page.</p></td>
+						<td class="td2">
+						<a href="mailto:rmcewen2016@gmail.com"><img src="../img/socialMediaIcons/google.png" /></a>
+						<a href="https://www.facebook.com/bob.mcewen2"><img src="../img/socialMediaIcons/facebook.png" width="60px" class="contactme-facebook" /></a>
+						<a href="https://www.linkedin.com/in/roberthmcewen"><img src="../img/socialMediaIcons/linkedin.png" /></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="td3">
+						<p class="texgyre-font">
+						Home: (219)-763-3560
+						<br />
+						Cell: (219)-742-1487
+						<br />
+						rmcewen2016@gmail.com
+						<br />
+						<br />
+						<i>Notice: For fastest response, please email or text.</i>
+						</p>
+						</td>
+						<td class="td4">
+						</td>
+					</tr>
+					<tr>
+						<td class="td5" colspan="2">&#169; 2016 Robert McEwen. All rights reserved.</td>
+						<td></td>
+					</tr>
+				</table>
+				
+			</fieldset>
+		</div>
+	</body>
+</html>
